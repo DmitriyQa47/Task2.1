@@ -16,7 +16,7 @@ class PostmanEchoTest2 {
                 .when()
                 .post("/post")
                 .then()
-                .statusCode(404)
+                .statusCode(200)
                 .contentType(ContentType.JSON)
                 .body("data", equalTo("some data"))
         ;
